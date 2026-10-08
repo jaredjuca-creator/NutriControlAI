@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NutriControl AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>NutriControl AI</h1>
+
+    <h2>Pacientes</h2>
+
+    <!-- Adicionar paciente -->
+    <h3>Adicionar paciente</h3>
+
+    <form id="form-paciente">
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Nome"
+            required
+        >
+
+        <input
+            type="number"
+            id="idade"
+            placeholder="Idade"
+            required
+        >
+
+        <!-- Sexo -->
+        <label for="sexo">
+            Sexo:
+        </label>
+
+        <select id="sexo" required>
+
+            <option value="">
+                Selecione o sexo
+            </option>
+
+            <option value="masculino">
+                Masculino
+            </option>
+
+            <option value="feminino">
+                Feminino
+            </option>
+
+        </select>
+
+        <input
+            type="text"
+            id="telefone"
+            placeholder="Telefone"
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="E-mail"
+        >
+
+        <input
+            type="number"
+            id="peso"
+            placeholder="Peso (kg)"
+            step="0.1"
+            required
+        >
+
+        <input
+            type="number"
+            id="altura"
+            placeholder="Altura (cm)"
+            step="0.1"
+            required
+        >
+
+        <input
+            type="text"
+            id="objetivo"
+            placeholder="Objetivo"
+            required
+        >
+
+        <!-- Nível de atividade -->
+        <label for="nivel_atividade">
+            Nível de atividade:
+        </label>
+
+        <select
+            id="nivel_atividade"
+            required
+        >
+
+            <option value="">
+                Selecione o nível
+            </option>
+
+            <option value="sedentario">
+                Sedentário
+            </option>
+
+            <option value="leve">
+                Levemente ativo
+            </option>
+
+            <option value="moderado">
+                Moderadamente ativo
+            </option>
+
+            <option value="alto">
+                Muito ativo
+            </option>
+
+            <option value="atleta">
+                Extremamente ativo
+            </option>
+
+        </select>
+
+        <button type="submit">
+            Adicionar paciente
+        </button>
+
+    </form>
+
+    <br>
+
+   <button onclick="carregarPacientes()">
+    Carregar pacientes
+</button>
+
+<button onclick="limparPacientes()">
+    Limpar lista
+</button>
+
+<div id="lista-pacientes"></div>
+
+    <!-- =========================================================
+         ALIMENTOS
+         ========================================================= -->
+
+    <h2>Busca de alimentos</h2>
+
+    <input
+        type="text"
+        id="busca-alimento"
+        placeholder="Digite o nome do alimento"
+    >
+
+    <button onclick="buscarAlimentos()">
+        Buscar alimento
+    </button>
+
+    <div id="lista-alimentos"></div>
+
+
+    <script src="script.js"></script>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
