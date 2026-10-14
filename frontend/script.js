@@ -556,8 +556,19 @@ function calcularAlimento(
         </p>
 
     `;
+
+ 
+
 }
 
+
+function limparAlimentos() {
+    // Limpa o campo de pesquisa
+    document.getElementById("busca-alimento").value = "";
+
+    // Limpa os resultados da pesquisa
+    document.getElementById("lista-alimentos").innerHTML = "";
+}
 
 
 // Carrega os pacientes quando a página abre

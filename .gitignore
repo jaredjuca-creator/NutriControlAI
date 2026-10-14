@@ -1,7 +1,11 @@
-venv/
-__pycache__/
-*.pyc
-*.db
-.env
-.vscode/
-.idea/
+1. Copie este comando no PowerShell e pressione Enter
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+Se pedir confirmação, digite S e pressione Enter.
+2. Ative o ambiente virtual
+.\venv\Scripts\Activate.ps1
+
+
+3. Suba o Swagger
+python -m uvicorn main:app --reload
